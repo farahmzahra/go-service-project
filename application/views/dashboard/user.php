@@ -33,7 +33,7 @@
 			<div class="card mt-3 mx-5 p-3 text-center">
 				<img class="ms-2" src="<?=base_url('assets/img/kran.png')?>" width="100px" />
 				<a aria-current="page" href="#" class="text-center active fw-bold"
-					style="text-decoration:none;color:#536D5A">Perbaikan Pipa</a>
+					style="text-decoration:none;color:#536D5A">Perbaikan<br>Pipa</a>
 			</div>
 		</div>
 		

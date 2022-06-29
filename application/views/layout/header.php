@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Go-Service</title>
 	<link rel="stylesheet" href="<?=base_url('assets')?>/style/navbar.css">
+	<link rel="stylesheet" href="<?=base_url('assets')?>/style/input.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -57,9 +58,9 @@
 					<li class="nav-item">
 						<a class="nav-link active fw-bold me-3" aria-current="page" href="#">Riwayat pesanan</a>
 					</li> -->
-					<li class="nav-item me-4">
+					<!-- <li class="nav-item me-4">
 						<a class="nav-link active btn text-light btn-lg px-4" style="background-color:#536D5A" aria-current="page" href="#">Keluar</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
