@@ -21,7 +21,7 @@ class User extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('layout/header');
-		$this->load->view('auth/regsitrasiuser');
+		$this->load->view('dashboard/user');
 		$this->load->view('layout/footer');
 	}
 }

@@ -15,7 +15,7 @@
 			<h6 style="color:#FFFFFF">Servis Listrik</h6>
 			<h6 style="color:#FFFFFF">Perbaikan Pipa</h6>
 		</div>
-		<div class="ol-6 col-md-2">
+		<div class="col-6 col-md-2">
 			<h5 style="color:#FFFFFF"><b>Contact</b></h5>
 			<h6 style="color:#FFFFFF">08xxxxxxx (WA)</h6>
 			<h6 style="color:#FFFFFF">go-service@gmail.com</h6>
@@ -23,5 +23,3 @@
 		</div>
 	</div>
 </div>
-
-</html>
