@@ -11,28 +11,28 @@
 		<div class="col">
 			<div class="card mt-3 mx-5 p-3 text-center">
 				<img class="ms-2" src="<?=base_url('assets/img/ac_service.png')?>" width="100px" />
-				<a aria-current="page" href="#" class="text-center active fw-bold"
+				<a aria-current="page" href="<?=base_url('user/servisUser/1')?>" class="text-center active fw-bold"
 					style="text-decoration:none;color:#536D5A">Servis<br>AC</a>
 			</div>
 		</div>
         <div class="col">
 			<div class="card mt-3 mx-5 p-3 text-center">
 				<img class="ms-3" src="<?=base_url('assets/img/elektronik.png')?>" width="100px" />
-				<a aria-current="page" href="#" class="text-center active fw-bold"
+				<a aria-current="page" href="<?=base_url('user/servisUser/2')?>" class="text-center active fw-bold"
 					style="text-decoration:none;color:#536D5A">Servis Elektronik</a>
 			</div>
 		</div>
         <div class="col">
 			<div class="card mt-3 mx-5 p-3 text-center">
 				<img class="ms-2" src="<?=base_url('assets/img/ac_service.png')?>" width="100px" />
-				<a aria-current="page" href="#" class="text-center active fw-bold"
+				<a aria-current="page" href="<?=base_url('user/servisUser/3')?>" class="text-center active fw-bold"
 					style="text-decoration:none;color:#536D5A">Servis<br>Listrik</a>
 			</div>
 		</div>
         <div class="col">
 			<div class="card mt-3 mx-5 p-3 text-center">
 				<img class="ms-2" src="<?=base_url('assets/img/kran.png')?>" width="100px" />
-				<a aria-current="page" href="#" class="text-center active fw-bold"
+				<a aria-current="page" href="<?=base_url('user/servisUser/4')?>" class="text-center active fw-bold"
 					style="text-decoration:none;color:#536D5A">Perbaikan<br>Pipa</a>
 			</div>
 		</div>

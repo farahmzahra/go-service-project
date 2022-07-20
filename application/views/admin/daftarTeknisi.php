@@ -1,59 +1,51 @@
-<div class=" m-5">
-	<h1>Daftar teknisi</h1>
-	<div class="row">
+<div class="m-5">
+	<h1><?php echo $judul; ?></h1>
+	<form action="<?=base_url('Admin/registrasi_teknisi'); ?>" method="post" enctype="multipart/form-data">
+	<div class="row mt-4">
 		<div class="col">
-			<div class="mb-3">
-				<label for="nama" class="form-label">Nama Lengkap</label>
-				<input type="text" class="form-control" id="nama" aria-describedby="wrong_user">
-			</div>
-			<div class="mb-3">
-				<label for="email" class="form-label">E-Mail</label>
-				<input type="email" class="form-control" id="email" aria-describedby="wrong_user">
-			</div>
-			<div class="mb-3">
-				<label for="usr" class="form-label">Username</label>
-				<input type="text" class="form-control" id="usr" aria-describedby="wrong_user">
-			</div>
-			<div class="mb-3">
-				<label for="pws" class="form-label">Password</label>
-				<input type="password" class="form-control" id="pws" aria-describedby="wrong_user">
-			</div>
 			<div class="mb-3">
 				<label for="nik" class="form-label">NIK</label>
-				<input type="number" class="form-control" id="nik" aria-describedby="wrong_user">
+				<input type="text" class="form-control" name="nik" aria-describedby="wrong_user">
+			</div>
+			<div class="mb-3">
+				<label for="nama" class="form-label">Nama Lengkap</label>
+				<input type="text" class="form-control" name="nama" aria-describedby="wrong_user">
+			</div>
+			<div class="mb-3">
+				<label for="email" class="form-label">Email</label>
+				<input type="email" class="form-control" name="email" aria-describedby="wrong_user">
+			</div>
+			<div class="mb-3">
+				<label for="Password" class="form-label">Password</label>
+				<input type="text" class="form-control" name="password" aria-describedby="wrong_user">
 			</div>
 		</div>
 		<div class="col">
 			<div class="mb-3">
-				<label for="hp" class="form-label">No.HP</label>
-				<input type="number" class="form-control" id="hp" aria-describedby="wrong_user">
+				<label for="hp" class="form-label">No HP</label>
+				<input type="text" class="form-control" name="no_hp" aria-describedby="wrong_user">
 			</div>
 			<div class="mb-3">
-				<div class="dropdown">
-					<button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
-						data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#536D5A;color: white">
-						Jasa
-					</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-						<li><a class="dropdown-item" href="#">Action    </a></li>
-						<li><a class="dropdown-item" href="#">Another action</a></li>
-						<li><a class="dropdown-item" href="#">Something else here</a></li>
-					</ul>
-				</div>
+				<label for="id_jasa" class="form-label">Jasa</label>
+                <select name="id_jasa" value="" id="id_jasa" class="form-control">
+                    <option value="">Pilih Jasa</option>
+                    <?php foreach ($jasa as $j) : ?>
+                        <option value="<?= $j['id_jasa']; ?>"><?= $j['nama_jasa']; ?></option>
+                    <?php endforeach; ?>
+                </select>
 			</div>
-            <div class="mb-3">
-				<label for="hp" class="form-label">Upload Foto</label>
-				<input type="file" class="form-control" id="hp" aria-describedby="wrong_user">
+            <div class="mb-3 custom-file">
+				<label for="profil" class="custom-file-label">Upload Foto</label>
+				<input type="file" class="custom-file-input" name="profil" id="profil">
+			</div>
+			<div class="mb-3">
+				<label for="rating" class="form-label">Rating</label>
+				<input type="text" class="form-control" name="rating" aria-describedby="wrong_user">
 			</div>
             <div class="mt-5 ">
-                <button type="submit" class="btn  btn-lg"  style="background-color:#CBD5B2;color: white">Ubah</button>
+                <button type="submit" class="btn btn-md w-25" style="background-color:#CBD5B2;color: white">Daftar</button>
 			</div>
 		</div>
-
 	</div>
-
-</div>
-</div>
-</div>
-</div>
+	</form>
 </div>

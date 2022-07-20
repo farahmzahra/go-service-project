@@ -1,22 +1,23 @@
+<?= $this->session->flashdata('message'); ?>
 <div class="container">
 	<div class="row mt-5 p-2 ">
 		<div class="col border rounded">
 			<img src="<?php echo base_url('assets/')?>img/login.png" width="550erm" />
-		</div>
+		</div>		
 		<div class="col border rounded mx-1">
 			<h1 class="text-center mt-sm-5" style="color:#536D5A">Selamat Datang!</h1>
-			<form action="#" method="post" enctype="multipart/form">
+			<form action="<?=base_url('Login/cek_login'); ?>" method="post" enctype="multipart/form">
 				<div class="row mt-5">
 					<div class="mb-3">
-						<label for="user" class="form-label">Username</label>
-						<input type="email" class="form-control" id="user" aria-describedby="wrong_user">
+						<label for="email" class="form-label">Email</label>
+						<input type="email" class="form-control" id="email" name="email">
 					</div>
 					<div class="mb-3">
 						<label for="psw" class="form-label">Password</label>
-						<input type="password" class="form-control" id="psw" aria-describedby="wrong_psw">
+						<input type="password" class="form-control" id="psw" name="password">
 					</div>
 					<div class="text-center">
-						<button type="submit" class="btn text-light px-4" style="background:#536D5A">Submit</button>
+						<button type="submit" class="btn text-light px-4" style="background:#536D5A">Login</button>
 					</div>
 				</div>
 			</form>

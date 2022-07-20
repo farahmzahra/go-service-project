@@ -2,42 +2,38 @@
 	<div class="row mt-5 mx-5">
 		<div class="col border rounded mx-5">
 			<h1 class="text-center mt-3" style="color:#536D5A">Daftar</h1>
-			<form action="#" method="post" enctype="multipart/form">
+			<form action="<?=base_url('Login/registrasi_user'); ?>" method="post" enctype="multipart/form-data">
 				<div class="mx-5">
 					<div class="row">
-					<div class="col-lg-5 mb-2">
+					<div class="col-lg-5 mb-2 w-100">
 						<label for="Nama" class="form-label">Nama Lengkap</label>
-						<input type="text" class="form-control" name="nama" aria-describedby="wrong_user">
+						<input type="text" class="form-control" name="nama">
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-5 mb-2">
+					<div class="col-lg-5 mb-2 w-100">
 						<label for="Email" class="form-label">Email</label>
-						<input type="email" class="form-control" name="email" aria-describedby="wrong_user">
+						<input type="email" class="form-control" name="email">
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-5 mb-2">
-						<label for="Username" class="form-label">Username</label>
-						<input type="text" class="form-control" name="username" aria-describedby="wrong_user">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-5 mb-2">
+					<div class="col-lg-5 mb-2 w-100">
 						<label for="Password" class="form-label">Password</label>
-						<input type="text" class="form-control" name="password" aria-describedby="wrong_user">
+						<input type="text" class="form-control" name="password">
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-5 mb-2">
+					<div class="col-lg-5 mb-2 w-100">
 						<label for="No HP" class="form-label">No HP</label>
-						<input type="text" class="form-control" name="no_hp" aria-describedby="wrong_user">
+						<input type="text" class="form-control" name="no_hp">
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-5 mb-2">
-						<label for="Profil" class="form-label">Foto Profil</label>
-						<input type="file" class="form-control" name="profil" aria-describedby="wrong_user">
+					<div class="custom-file">
+						<label for="profil" class="custom-file-label">Upload Foto</label>
+						<div>
+							<input type="file" class="custom-file-input" name="profil" id="profil">
+						</div>
 					</div>
 				</div>
 				<div class="text-center mb-3">

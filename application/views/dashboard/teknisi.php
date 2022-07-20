@@ -5,7 +5,7 @@
 		</div>
 		<div class="mt-4 text-center">
 			<h3>Selamat Bergabung di <b style="color:#CBD5B2">Go-Service</b>, Teknisi!</h3>
-			<a class="btn text-light mt-3" style="background-color:#CBD5B2" aria-current="page" href="#">Mari Bekerja</a>
+			<a class="btn text-light mt-3" style="background-color:#CBD5B2" aria-current="page" href="<?= base_url('Teknisi/teknisi/') . $teknisi['id_teknisi']; ?>">Mari Bekerja</a>
 		</div>
 	</div>
 </div>
