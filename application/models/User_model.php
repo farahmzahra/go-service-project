@@ -78,7 +78,7 @@ class User_model extends CI_Model
 	}
 
 	public function riwayatUser($id){
-		$query = $this->db->query("SELECT * FROM pesanan WHERE id_pengguna = '$id' AND status='Rated'");
+		$query = $this->db->query("SELECT * FROM pesanan WHERE id_pengguna = '$id' AND status='Selesai Rating'");
 		return $query->result_array();
 	}
 
@@ -98,7 +98,11 @@ class User_model extends CI_Model
 	public function ratingTeknisi($id, $idp, $rating){
 		$this->db->select('rating')->from('teknisi')->where('id_teknisi','3');
 		$rate = $this->db->get()->row()->rating;
-		$result = ($rating + $rate) / 2;
+		if ($rate == 0) {
+			$result = $rating;
+		} else {
+			$result = ($rating + $rate) / 2;
+		}
 		$this->db->query("UPDATE teknisi SET rating = $result where id_teknisi = ".$id);
 		$this->db->query("UPDATE pesanan SET status = 'Selesai Rating' where id_pesanan = ".$idp);
 		return $this->db->affected_rows();

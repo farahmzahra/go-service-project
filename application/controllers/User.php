@@ -62,17 +62,6 @@ class User extends CI_Controller {
 	}
 	
 	public function pembelianJasa(){
-		$btn_nav['btn'] = null;
-		if($this->session->userdata('email')== null){
-			
-			$btn_nav['btn'] ="Login";
-			
-		}
-		else{
-			
-			$btn_nav['btn'] ="keluar";
-			
-		}
 		$idjenis =null ;
 		$idjasa = null ;
 		$harga = null ;
@@ -107,11 +96,10 @@ class User extends CI_Controller {
 		$this->User_model->insertpesanan($data);
 		$pesan["wait"] = $this->User_model->getpesananby($this->input->post('id_pengguna'));
 		$pesan["pengguna"] = $this->User_model->getby();
-		$this->load->view('layout/header',$btn_nav);
-		$this->load->view('user/waitroom',$pesan);
+		$pesan['user'] = $this->User_model->getByIdUser($this->input->post('id_pengguna'));
+		$this->load->view('layout/header_user', $pesan);
+		$this->load->view('dashboard/user', $pesan);
 		$this->load->view('layout/footer');
-
-
 
 		// $this->teknisirole->insert($data, $upload_image);
 		// $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">

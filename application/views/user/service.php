@@ -116,7 +116,7 @@
 						?>
 					<input type="radio" name="radioServis" id="radio<?php echo "$counter"?>">
 					<label for="radio<?php echo "$counter"?>">
-						<div class="card d-flex flex-lg-row p-3 carded me-5" style="width: 15rem;">
+						<div class="card d-flex flex-lg-row p-3 carded me-5" style="width: 20rem;">
 							<img src="<?php echo base_url('assets')?>/img/<?php echo $card['profil']; ?>" class=" rounded" width="100px">
 							<input type="hidden" name="id_teknisi" value="<?php echo $card['id_teknisi'];?>"/>
 							<div class="card-body">	

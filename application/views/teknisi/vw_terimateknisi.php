@@ -148,9 +148,8 @@
 							<?php echo $a['keterangan']; ?>
 						</p>
 						<div class="col text-center">
-							<a href="<?php echo base_url('Teknisi/tolakpesan/').$a['id_pesanan']; ?>" class="btn text-light px-5 mt-1 me-2" style="background-color:#536D5A">Tolak</a>
-							<a href="<?php echo base_url('Teknisi/terimapesan/').$a['id_pesanan']; ?>" class="btn text-light px-5 mt-1 ms-2"
-								style="background-color:#CBD5B2">Terima</a>
+							<a href="<?php echo base_url('Teknisi/selesaipesan/').$a['id_pesanan']; ?>" class="btn text-light px-5 mt-1 ms-2"
+								style="background-color:#CBD5B2">Selesai</a>
 						</div>
 					</div>
 				</div>
